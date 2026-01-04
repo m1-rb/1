@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Tourism in Jordan </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- Header مشترك لكل الصفحات -->
+<header>
+  <h1>شركة سياحة الأردن</h1>
+  <nav>
+    <a href="#" onclick="showPage('home')">الرئيسية</a>
+    <a href="#" onclick="showPage('about')">من نحن</a>
+    <a href="#" onclick="showPage('services')">خدماتنا</a>
+    <a href="#" onclick="showPage('contact')">تواصل معنا</a>
+  </nav>
+</header>
+
+<!-- الصفحة الرئيسية -->
+<div id="home">
+  <h2>مرحبًا بكم في عالم السياحة الأردنية</h2>
+  <p>نقدم أفضل الرحلات الداخلية لتستمتع بالأماكن السياحية الرائعة في الأردن.</p>
+  <button onclick="alert('يمكنك زيارة صفحة خدماتنا لمعرفة الرحلات المتاحة!')">اعرف المزيد عن رحلاتنا</button>
+  <section class="images">
+    <section class="images">
+  <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=300" alt="البتراء">
+  <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=300" alt="البحر الميت">
+  <img src="https://images.unsplash.com/photo-1601352925842-b69c5f1a52fc?w=300" alt="وادي رم">
+  <img src="https://images.unsplash.com/photo-1570414059493-4824f1b4c84a?w=300" alt="عمان">
+</section>
+  </section>
+</div>
+
+<!-- صفحة من نحن -->
+<div id="about" style="display:none;">
+  <h2>عن شركتنا</h2>
+  <p>تأسست شركتنا عام 2015 بهدف تقديم أفضل الرحلات الداخلية في الأردن، مع مرشدين خبراء وخدمة متميزة للعملاء.</p>
+  <p>نؤمن بأن السفر داخل الأردن يجب أن يكون تجربة ممتعة ومريحة لجميع الزوار.</p>
+</div>
+
+<!-- صفحة الخدمات -->
+<div id="services" style="display:none;">
+  <h2>رحلاتنا السياحية</h2>
+  <ul>
+    <li>رحلة إلى البتراء - اكتشف المدينة الوردية الشهيرة</li>
+    <li>رحلة إلى البحر الميت - استمتع بالسباحة والتجربة الفريدة</li>
+    <li>رحلة إلى وادي رم - تجربة الصحراء الخلابة</li>
+    <li>رحلة إلى عمان القديمة والحديثة - جولة ثقافية وتاريخية</li>
+  </ul>
+</div>
+
+<!-- صفحة تواصل معنا -->
+<div id="contact" style="display:none;">
+  <h2>تواصل معنا</h2>
+  <form>
+    <label>الاسم:</label><br>
+    <input type="text" placeholder="اسمك"><br><br>
+    
+    <label>البريد الإلكتروني:</label><br>
+    <input type="email" placeholder="example@mail.com"><br><br>
+    
+    <label>الرسالة:</label><br>
+    <textarea placeholder="اكتب رسالتك هنا"></textarea><br><br>
+    
+    <button type="submit">إرسال</button>
+  </form>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
